@@ -13,10 +13,11 @@
 <body>
     <form action="" method="POST" enctype="multipart/form-data">
         <p>Text input control</p>
-        First name: <input type="text" name="fname" value="steve" readonly size="50" minlength="1" maxlength="2" /><br>
+        First name: <input type="text" name="fname" value="steve" readonly
+         size="50" minlength="1" maxlength="20" /><br>
         Last name: <input type="text" name="lname" placeholder="Enter last name" required>
         <p>Password input</p>
-        Password:<input type="password">
+        Password:<input type="password" autofocus>
         <br>
         Bio:
         <textarea name="bio" rows="5" cols="30" maxlength="80">
@@ -25,7 +26,37 @@
         <input type="checkbox" name="steve" value="steve" />Steve
         <br>
         <input type="checkbox" name="david" value="david" id="" checked>David
+        <p>Radio button</p>
+        <input type="radio" name="gender" value="male" checked />Male
+        <input type="radio" name="gender" value="female" />Female
+        <p>Select box control</p>
+        <select name="subjects" size="3" multiple>
+            <option value=""></option>
+            <option value="physics" selected>Physics</option>
+            <option >Chemistry</option>
+        </select>
+        <p>File upload box</p>
+        <input type="file" name="photo" accept="docs/*"/>
+        <p>Button control</p>
        
+        <input type="button" value="ok" >
+        <input type="image" name="imgbtn"  width="20" height="25"src="./../images/img.jpeg"><br>
+        <input type="color" name="" id=""><br>
+        <input type="date" name="" id=""><br>
+        <input type="datetime-local" name="" id=""><br>
+       Email <input type="email" name="" id="" placeholder="email address">
+       <input type="hidden" name="" value="54">
+       <input type="month" name="" id=""><br>
+       Number<input type="number" name="" id="">
+       Low<input type="range" name="" id="" min="40" max="50">High <br>
+       Search<input type="search" name="" id=""><br>
+       tel<input type="tel" name="" id="" maxlength="10"><br>
+       <input type="time" name="" id=""><br>
+       Link<input type="url" name="" id=""><br>
+       <input type="week" name="" id="">
+       <br>
+       <input type="submit" >
+       <input type="reset">
     </form>
 </body>
 
